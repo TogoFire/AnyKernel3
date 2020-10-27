@@ -13,7 +13,9 @@ do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=
+device.name1=daisy
+device.name2=sakura
+device.name3=sakura_india
 supported.versions=
 supported.patchlevels=
 supported.vendorpatchlevels=
@@ -28,7 +30,7 @@ set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
 } # end attributes
 
 # boot shell variables
-block=;
+block=/dev/block/bootdevice/by-name/boot;
 is_slot_device=auto;
 ramdisk_compression=auto;
 patch_vbmeta_flag=auto;
@@ -111,4 +113,3 @@ rm -rf /vendor/bin/sleepy_exec.sh
 
 #write_boot; # use flash_boot to skip ramdisk repack, e.g. for dtb on devices with hdr v4 but no vendor_kernel_boot
 ## end vendor_boot install
-
