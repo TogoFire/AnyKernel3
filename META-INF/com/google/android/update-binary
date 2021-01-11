@@ -23,6 +23,10 @@ ui_print() {
     shift;
   done;
 }
+
+ui_print "-------T H O R  K E R N E L-------"
+ui_print "-----KERNEL BY  T O G O-F I R E-----";
+
 ui_printfile() {
   while IFS='' read -r line || $BB [[ -n "$line" ]]; do
     ui_print "$line";
@@ -495,4 +499,18 @@ if [ "$(file_getprop anykernel.sh do.cleanup)" == 1 ]; then
   cleanup;
 fi;
 
-ui_print " " " " "Done!";
+ui_print ""
+ui_print ""
+ui_print "-- /~-__A__-~\ --------------- /~-__A__-~\ --"
+ui_print "  |     H     |               |     H     |  "
+ui_print "  |     H     |               |     H     |  "
+ui_print "   \_-~~H~~-_/                 \_-~~H~~-_/   "
+ui_print "        H                           H        "
+ui_print "        H                           H        "
+ui_print "        H                           H        "
+ui_print "        H                           H        "
+ui_print "------- U ------------------------- U -------"
+ui_print ""
+ui_print ""
+ui_print " " "THANK YOU FOR USING T H O R-K E R N E L"
+ui_print " " " ";
