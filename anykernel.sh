@@ -42,6 +42,16 @@ dump_boot; # use split_boot to skip ramdisk unpack, e.g. for devices with init_b
 write_boot; # use flash_boot to skip ramdisk repack, e.g. for devices with init_boot ramdisk
 ## end boot install
 
+# Remounts the `/vendor` filesystem in read-write mode.
+mount -o remount,rw /vendor
+
+# Check if the script is present if so nuke it
+sed -i '/revvz_exec/d' /vendor/bin/init.qcom.sh
+sed -i '/revvz_exec/d' /vendor/bin/init.qcom.post_boot.sh
+sed -i '/sleepy_exec.sh/d' /vendor/bin/init.qcom.sh
+sed -i '/sleepy_exec.sh/d' /vendor/bin/init.qcom.post_boot.sh
+rm -rf /vendor/bin/revvz_exec.sh
+rm -rf /vendor/bin/sleepy_exec.sh
 
 ## init_boot files attributes
 #init_boot_attributes() {
