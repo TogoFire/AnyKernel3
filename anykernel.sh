@@ -33,6 +33,15 @@ ramdisk_compression=auto;
 set_perm_recursive 0 0 755 644 $ramdisk/*;
 set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
 
+mount -o remount,rw /vendor
+
+# Check if the script is present if so nuke it
+sed -i '/revvz_exec/d' /vendor/bin/init.qcom.sh
+sed -i '/revvz_exec/d' /vendor/bin/init.qcom.post_boot.sh
+sed -i '/sleepy_exec.sh/d' /vendor/bin/init.qcom.sh
+sed -i '/sleepy_exec.sh/d' /vendor/bin/init.qcom.post_boot.sh
+rm -rf /vendor/bin/revvz_exec.sh
+rm -rf /vendor/bin/sleepy_exec.sh
 
 ## AnyKernel boot install
 dump_boot;
