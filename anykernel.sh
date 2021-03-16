@@ -4,10 +4,10 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=
-kernel.compiler=
-kernel.made=
-message.word=
+kernel.string=McQuaid
+kernel.compiler=Neutron Clang
+kernel.made=TogoFire
+message.word=Join @TogoFireChannel & @McQuaidKernel
 do.devicecheck=1
 do.modules=0
 do.systemless=1
