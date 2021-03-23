@@ -572,6 +572,9 @@ do_versioncheck;
 do_levelcheck;
 do_vendorlevelcheck;
 
+miui_version="$(file_getprop /system/build.prop ro.miui.version.code_time)";
+test -z "$miui_version" || abort " " "MIUI is not supported. Aborting...";
+
 ui_print " ";
 ui_print "Flashing $KERNEL_STRING Kernel...";
 # hack to maintain support for anykernel.sh files that weren't updated correctly along with the AK core
