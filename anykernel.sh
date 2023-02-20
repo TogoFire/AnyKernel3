@@ -4,10 +4,10 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=
-kernel.compiler=
-kernel.made=
-message.word=
+kernel.string=Biogenesis
+kernel.compiler=TRB Clang
+kernel.made=WolfAURman
+message.word=Join @WolfAURmanRedmi9Builds
 do.devicecheck=1
 do.modules=0
 do.systemless=1
