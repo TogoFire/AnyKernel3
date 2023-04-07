@@ -595,5 +595,16 @@ fi;
 ui_print "- Done";
 ui_print " " "_________________________________________________";
 ui_print " " "$MESSAGE_WORD" "_________________________________________________" " ";
+ui_print ""
+ui_print ""
+ui_print "Thanks for installing"
+ui_print "             _             "
+ui_print "            (_)            "
+ui_print "  ___  _ __  _  ___  _ __  "
+ui_print " / _ \| '_ \| |/ _ \| '_ \ "
+ui_print "| (_) | | | | | (_) | | | |"
+ui_print " \___/|_| |_|_|\___/|_| |_|"
+ui_print ""
+ui_print " " " ";
 export PATH="$OLD_PATH";
 unset OLD_PATH OUTFD ZIPFILE;

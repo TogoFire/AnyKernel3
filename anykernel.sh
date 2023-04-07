@@ -4,10 +4,10 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=
-kernel.compiler=
-kernel.made=
-message.word=
+kernel.string=Onion
+kernel.compiler=Playground Clang
+kernel.made=LupeSoltec
+message.word=Join @LuPeS0lTec
 do.devicecheck=1
 do.modules=0
 do.systemless=1
