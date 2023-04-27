@@ -24,6 +24,10 @@ ui_print() {
     shift;
   done;
 }
+
+ui_print "-------N E T H U N T E R  K E R N E L-------"
+ui_print "---------KERNEL BY  T O G O-F I R E---------";
+
 ui_printfile() {
   local line losrpad;
   $BOOTMODE || [ -e /twres ] || losrpad='| '; # work around LOS Recovery eating leading whitespace
@@ -595,5 +599,41 @@ fi;
 ui_print "- Done";
 ui_print " " "_________________________________________________";
 ui_print " " "$MESSAGE_WORD" "_________________________________________________" " ";
+ui_print ""
+ui_print ""
+ui_print "##################################################"
+ui_print "##                                              ##"
+ui_print "##  88      a8P         db        88        88  ##"
+ui_print "##  88    .88'         d88b       88        88  ##"
+ui_print "##  88   88'          d8''8b      88        88  ##"
+ui_print "##  88 d88           d8'  '8b     88        88  ##"
+ui_print "##  8888'88.        d8YaaaaY8b    88        88  ##"
+ui_print "##  88P   Y8b      d8''''''''8b   88        88  ##"
+ui_print "##  88     '88.   d8'        '8b  88        88  ##"
+ui_print "##  88       Y8b d8'          '8b 888888888 88  ##"
+ui_print "##                                              ##"
+ui_print "##**********************************************##"
+ui_print "##        Nethunter Kernel For Everyone :)      ##"
+ui_print "##**********************************************##"
+ui_print "                  ████                           "
+ui_print "                ████████        ████             "
+ui_print "                ████████      ████████           "
+ui_print "          ██                    ██████           "
+ui_print "        ██      ██                               "
+ui_print "      ██      ████                               "
+ui_print "      ██      ██      ████                       "
+ui_print "      ██      ██    ██████    ████    ██         "
+ui_print "      ██      ██    ████      ████    ██         "
+ui_print "      ████    ████              ██    ██         "
+ui_print "      ████    ██████    ██████      ████         "
+ui_print "        ████  ████████    ██      ██████         "
+ui_print "        ████████████████      ██████████         "
+ui_print "      ████████████████████████████████           "
+ui_print "      ██████  ████████      ██████               "
+ui_print "        ████  ████████    ████████               "
+ui_print "                ████████  ██████                 "
+ui_print "                  ██████                         "
+ui_print ""
+ui_print " " " ";
 export PATH="$OLD_PATH";
 unset OLD_PATH OUTFD ZIPFILE;
