@@ -24,6 +24,9 @@ ui_print() {
     shift;
   done;
 }
+
+ui_print "-----KERNEL BY  T O G O-F I R E-----";
+
 ui_printfile() {
   local line losrpad;
   $BOOTMODE || [ -e /twres ] || losrpad='| '; # work around LOS Recovery eating leading whitespace
@@ -595,5 +598,24 @@ fi;
 ui_print "- Done";
 ui_print " " "_________________________________________________";
 ui_print " " "$MESSAGE_WORD" "_________________________________________________" " ";
+ui_print ""
+ui_print ""
+ui_print "##################################################"
+ui_print "##                                              ##"
+ui_print "##      ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     ##"
+ui_print "##      ░   ░░░   ░░░░░      ░░░   ░░░░░        ##"
+ui_print "##      ▒   ▒▒   ▒▒▒▒   ▒▒▒▒   ▒   ▒▒▒▒▒        ##"
+ui_print "##      ▒   ▒   ▒▒▒▒▒▒   ▒▒▒▒▒▒▒   ▒▒▒▒▒        ##"
+ui_print "##      ▓  ▓  ▓▓▓▓▓▓▓▓▓▓   ▓▓▓▓▓   ▓▓▓▓▓        ##"
+ui_print "##      ▓   ▓▓   ▓▓▓▓▓▓▓▓▓▓   ▓▓   ▓▓▓▓▓        ##"
+ui_print "##      ▓   ▓▓▓   ▓▓▓   ▓▓▓▓   ▓   ▓▓▓▓▓        ##"
+ui_print "##      █   █████   ███      █████      ███     ##"
+ui_print "##      ███████████████████████████████████     ##"
+ui_print "##                                              ##"
+ui_print "##**********************************************##"
+ui_print "##           KernelSU For Everyone :)           ##"
+ui_print "##**********************************************##"
+ui_print ""
+ui_print " " " ";
 export PATH="$OLD_PATH";
 unset OLD_PATH OUTFD ZIPFILE;
