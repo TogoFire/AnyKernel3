@@ -4,10 +4,10 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=
-kernel.compiler=
-kernel.made=
-message.word=
+kernel.string=Alchemy
+kernel.compiler=TRB Clang
+kernel.made=Pranav Temkar
+message.word=Join @voltageos
 do.devicecheck=1
 do.modules=0
 do.systemless=1
